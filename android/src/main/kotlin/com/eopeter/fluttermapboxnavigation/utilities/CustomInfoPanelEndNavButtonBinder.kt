@@ -61,7 +61,7 @@ class CustomInfoPanelEndNavButtonBinder(
                 super.onAttached(mapboxNavigation)
                 button.setOnClickListener {
                     mapboxNavigation.stopTripSession()
-                    PluginUtilities.sendEvent(MapBoxEvents.NAVIGATION_CANCELLED)
+                    // PluginUtilities.sendEvent(MapBoxEvents.NAVIGATION_CANCELLED)
                     activity.onBackPressed()
                     //activity.finish()
                 }
